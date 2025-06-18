@@ -95,7 +95,7 @@ Predict pregnancy risk using accessible community-collected data to enable:
 
 
    ### Video
-## [Watch the video on YouTube](https://youtu.be/LBi41Ysy4Bg)
+## [Watch the video ](https://youtu.be/LBi41Ysy4Bg)
 
 
 
