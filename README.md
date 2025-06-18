@@ -93,13 +93,8 @@ Predict pregnancy risk using accessible community-collected data to enable:
    - Dropout (30-40%) helped prevent overfitting
 3. Model 4 (L2 + 40% dropout) was the best neural network with 68.97% accuracy
 
-## 🚀 How to Use
-1.Open `notebook.ipynb` in Google Colab and run all cells. All required packages are pre-installed in Colab's environment.
-2. For local execution:
-   ```bash
-   pip install -r requirements.txt
-
 
    ### Video
-## Watch:- https://www.canva.com/design/DAGquzJ6TcU/___amKxk-tguZS_VimLf3A/edit?utm_content=DAGquzJ6TcU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+## Watch:[Click here to view the Canva design](https://www.canva.com/design/DAGquzJ6TcU/___amKxk-tguZS_VimLf3A/edit?utm_content=DAGquzJ6TcU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
  
