@@ -2,6 +2,9 @@
 
 # Optimization Techniques in Machine Learning for Maternal Health Risk Prediction
 
+## 📌 Problem Statement
+This project predicts maternal health risk levels (Low/Medium/High) using health metrics from Rwandan women. We compare neural networks with different optimization techniques against classical ML algorithms to identify the most effective approach for community health applications.
+
 ## 📌 Project Overview
 This project explores optimization techniques for machine learning models to predict maternal health risk levels (Low/Medium/High) using health metrics from Rwandan women. The implementation compares:
 - Neural networks with different regularization/optimization configurations
@@ -18,15 +21,22 @@ This project explores optimization techniques for machine learning models to pre
 - **Target**: Risk level (0=Low, 1=Medium, 2=High)
 - **Samples**: 1,034 observations
 
-## 🛠️ Implementation
+## 🏗️ Implementation
 
 ### Model Architectures
-| Model | Architecture | Optimization | Regularization | Dropout | Learning Rate |
-|-------|--------------|--------------|----------------|---------|---------------|
-| Model 1 | 64-32-3 | Adam | None | 0% | 0.001 |
-| Model 2 | 64-32-3 | Adam | L2 | 30% | 0.0005 |
-| Model 3 | 64-32-3 | RMSprop | L1 | 20% | 0.0002 |
-| Model 4 | 64-32-3 | Adam | L2 | 40% | 0.0003 |
+
+#### Neural Networks
+| Instance | Optimizer | Regularizer | Epochs | Early Stopping | Layers | Learning Rate | Dropout | Accuracy | F1-Score | Precision | Recall |
+|----------|-----------|-------------|--------|----------------|--------|---------------|---------|----------|----------|-----------|--------|
+| 1 (Baseline) | Adam | None | 20 | No | 3 | 0.001 | 0% | 0.6798 | 0.6743 | 0.6823 | 0.6798 |
+| 2 | Adam | L2 | 30 | Yes | 3 | 0.0005 | 30% | 0.6650 | 0.6501 | 0.6678 | 0.6650 |
+| 3 | RMSprop | L1 | 25 | No | 3 | 0.0002 | 20% | 0.6355 | 0.5928 | 0.6665 | 0.6355 |
+| 4 | Adam | L2 | 35 | Yes | 3 | 0.0003 | 40% | 0.6897 | 0.6643 | 0.7100 | 0.6897 |
+
+#### Classical ML (Random Forest)
+| Model | n_estimators | max_depth | min_samples_split | Accuracy | F1-Score | 
+|-------|--------------|-----------|-------------------|----------|----------|
+| Optimized RF | 200 | 20 | 2 | 0.8374 | 0.8384 |
 
 ### Key Techniques Compared:
 - **Regularization**: L1 vs L2
@@ -45,24 +55,32 @@ This project explores optimization techniques for machine learning models to pre
 | Model 2 | 0.6650 | 0.6501 | 0.6678 | 0.6650 | 0.7292 |
 | Model 3 | 0.6355 | 0.5928 | 0.6665 | 0.6355 | 0.8597 |
 
-### Best Model
-**Random Forest Classifier** outperformed neural networks with:
-- **Accuracy**: 83.74%
-- **F1-Score**: 83.84%
-- **Precision**: 84.17%
+### Best Performing Models
+1. **Random Forest Classifier** (Best Overall)
+   - Accuracy: 83.74%
+   - Key Hyperparameters: 
+     - `n_estimators=200`
+     - `max_depth=20`
+     - `min_samples_split=2`
 
-![Confusion Matrix](images/confusion_matrix.png)
-*Confusion matrix for the best model*
+2. **Neural Network (Instance 4)** (Best NN)
+   - Accuracy: 68.97%
+   - Configuration:
+     - L2 Regularization
+     - 40% Dropout
+     - Learning Rate: 0.0003
 
 ## 💡 Key Findings
 1. The Random Forest model achieved superior performance compared to neural networks
 2. Among neural networks:
    - L2 regularization (Model 4) performed best
+   - L2 regularization worked better than L1
    - Lower learning rates (0.0002-0.0005) showed better stability
    - Dropout (30-40%) helped prevent overfitting
 3. Model 4 (L2 + 40% dropout) was the best neural network with 68.97% accuracy
 
 ## 🚀 How to Use
-1. Install requirements:
+1.Open `notebook.ipynb` in Google Colab and run all cells. All required packages are pre-installed in Colab's environment.
+2. For local execution:
    ```bash
    pip install -r requirements.txt
