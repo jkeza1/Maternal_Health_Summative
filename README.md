@@ -55,8 +55,6 @@ Predict pregnancy risk using accessible community-collected data to enable:
 ### Key Techniques Compared:
 - **Regularization**: L1 vs L2
 - **Optimizers**: Adam vs RMSprop
-### Video
-Watch:- https://www.canva.com/design/DAGquzJ6TcU/___amKxk-tguZS_VimLf3A/edit?utm_content=DAGquzJ6TcU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 - **Dropout**: 0-40%
 - **Learning Rates**: 0.0002-0.001
 
@@ -100,3 +98,6 @@ Watch:- https://www.canva.com/design/DAGquzJ6TcU/___amKxk-tguZS_VimLf3A/edit?utm
 2. For local execution:
    ```bash
    pip install -r requirements.txt
+
+### Video
+Watch:- https://www.canva.com/design/DAGquzJ6TcU/___amKxk-tguZS_VimLf3A/edit?utm_content=DAGquzJ6TcU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
