@@ -95,6 +95,7 @@ Predict pregnancy risk using accessible community-collected data to enable:
 
 
    ### Video
-## Watch:[Click here to view the Canva design](https://www.canva.com/design/DAGquzJ6TcU/___amKxk-tguZS_VimLf3A/edit?utm_content=DAGquzJ6TcU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+## [![Watch the video](https://img.youtube.com/vi/LBi41Ysy4Bg/0.jpg)](https://youtu.be/LBi41Ysy4Bg)
+
 
  
