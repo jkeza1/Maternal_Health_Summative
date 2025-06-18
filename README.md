@@ -2,14 +2,27 @@
 
 # Optimization Techniques in Machine Learning for Maternal Health Risk Prediction
 
+## 🌍 Motivation & Background
+Unplanned pregnancies among single mothers in Rwanda contribute to:
+- Cycles of poverty and school dropouts
+- Poor maternal/neonatal health outcomes
+- Strain on community health resources
+
+While platforms like RapidSMS and Babyl Rwanda provide health tracking, they lack predictive capabilities for personalized interventions in low-resource settings.
+
 ## 📌 Problem Statement
 This project predicts maternal health risk levels (Low/Medium/High) using health metrics from Rwandan women. We compare neural networks with different optimization techniques against classical ML algorithms to identify the most effective approach for community health applications.
 
-## 📌 Project Overview
+## Project Overview
 This project explores optimization techniques for machine learning models to predict maternal health risk levels (Low/Medium/High) using health metrics from Rwandan women. The implementation compares:
 - Neural networks with different regularization/optimization configurations
 - A baseline Random Forest model
-
+- 
+**Our Solution:**
+Predict pregnancy risk using accessible community-collected data to enable:
+- Early interventions through Rwanda's SMEEF platform
+- Targeted support for high-risk women
+- Resource optimization for community health programs
 ## 🎯 Objectives
 1. Implement and compare 4 neural network architectures with different optimization techniques
 2. Evaluate model performance using F1-score, precision, recall, and confusion matrices
